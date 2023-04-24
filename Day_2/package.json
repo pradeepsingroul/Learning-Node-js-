@@ -2,7 +2,7 @@
   "name": "day_2",
   "version": "1.0.0",
   "description": "A node js tutorial",
-  "main": "Modules.js",
+  "main": "Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/pradeepsingroul/Learning-Node-js-#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "chalk": "^5.2.0",
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
   }
 }
