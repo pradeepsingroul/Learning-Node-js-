@@ -1,0 +1,6 @@
+const http = require('http')
+
+http.createServer((req,resp)=>{
+    return resp.write("<h1> hello, My name is pradeep singroul and currentely i am learning Node js</h1><p> heyllsdjhg svdf  vhjn jshdgf </p> ṭ<p> heyllsdjhg svdf  vhjn jshdgf </p")
+}).listen(4600)
+// run 'localhost:4600' in browser

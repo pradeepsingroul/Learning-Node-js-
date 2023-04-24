@@ -1,0 +1,22 @@
+{
+  "name": "day_2",
+  "version": "1.0.0",
+  "description": "A node js tutorial",
+  "main": "Modules.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepsingroul/Learning-Node-js-.git"
+  },
+  "author": "pradeepsingroul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradeepsingroul/Learning-Node-js-/issues"
+  },
+  "homepage": "https://github.com/pradeepsingroul/Learning-Node-js-#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
