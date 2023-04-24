@@ -1,0 +1,22 @@
+{
+  "name": "day_7_express-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepsingroul/Learning-Node-js-.git"
+  },
+  "author": "pradeepsingroul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradeepsingroul/Learning-Node-js-/issues"
+  },
+  "homepage": "https://github.com/pradeepsingroul/Learning-Node-js-#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
