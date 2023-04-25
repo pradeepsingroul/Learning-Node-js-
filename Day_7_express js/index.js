@@ -14,18 +14,18 @@ app.get('',(req,resp)=>{
 
 })
 
-app.get('/about',(req,resp)=>{
+app.get('/about',(req,resp)=>{http://localhost:4500/about
     resp.send("hello, welcome to about page")
     let details = req.query;
     console.log('details :', details);
     
 })
-app.get('/help',(req,resp)=>{
+app.get('/help',(req,resp)=>{//localhost:4500/help
     resp.send("hello, welcome to help page")
 })
 
 // you can send the html data as well let see the example
-app.get('/htmlresponse',(req,resp)=>{
+app.get('/htmlresponse',(req,resp)=>{//htmlresponse
     let value = req.query.name
     resp.send(`
     <h1> hello my name is pradeeep singroul</h1>
@@ -34,8 +34,23 @@ app.get('/htmlresponse',(req,resp)=>{
     `)
 })
 
+// we can link the multile pages as well
+app.get('/Linkpages',(req,resp)=>{////localhost:4500/Linkpages
+    let value = req.query.name
+    resp.send(`
+    <h1> hello my name is pradeeep singroul</h1>
+    <input type="text", placeholder="enter you name" value=${value}>
+    <button>click here</button>
+    </br>
+    <a href="about">go to the about</a>
+    `)
+    // in line 45 i have linked the about page with 'linkpage'
+})
+
 //we cansend Json data as well let see the example
 
-app.get('/jsondata',(req,resp)=>{
+app.get('/jsondata',(req,resp)=>{//localhost:4500/jsondata
     resp.send(data)
 })
+
+
