@@ -2,6 +2,13 @@ const express = require('express')
 const app = express();
 app.listen(4500)
 const data = require('./data')
+const path = require('path')
+
+
+
+
+
+
 //when you want to send the data u will use respose
 
 app.get('',(req,resp)=>{
@@ -54,3 +61,18 @@ app.get('/jsondata',(req,resp)=>{//localhost:4500/jsondata
 })
 
 
+const filePath = path.join(__dirname,"public")
+app.use(express.static(filePath))//localhost:4500/home.html
+
+
+
+//but if you dont want to show the file name like home.html ,about.html you want to show only home and  about then
+// const filePath = path.join(__dirname,"public")
+app.get('/homeyo',(req, resp)=>{
+    resp.sendFile(`${filePath}/home.html`)
+})
+
+//if you user enter wrong url then you want ot show 404 page then
+app.get('*',(req, resp)=>{
+    resp.sendFile(`${filePath}/404Page.html`)
+}) // now if user enter wrong user on 4500 port then 404page.html will show
